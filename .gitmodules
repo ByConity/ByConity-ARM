@@ -63,10 +63,10 @@
 	url = https://github.com/ClickHouse-Extras/libcxx.git
 [submodule "contrib/libcxxabi"]
 	path = contrib/libcxxabi
-	url = git@github.com:ByConity/clickhouse-libcxxabi.git
+	url = https://github.com/ByConity/clickhouse-libcxxabi.git
 [submodule "contrib/snappy"]
 	path = contrib/snappy
-	url = https://github.com/google/snappy
+	url = https://github.com/google/snappy.git
 [submodule "contrib/cppkafka"]
 	path = contrib/cppkafka
 	url = https://github.com/mfontanini/cppkafka.git
@@ -262,7 +262,7 @@
 	url = https://github.com/gflags/gflags.git
 [submodule "contrib/libhdfs3-open"]
 	path = contrib/libhdfs3-open
-	url = https://github.com/ByConity/libhdfs3-open.git
+	url = https://github.com/frankye1982/libhdfs3-open.git
 [submodule "contrib/boost"]
 	path = contrib/boost
 	url = https://github.com/ClickHouse-Extras/boost.git
@@ -328,16 +328,16 @@
     url = https://github.com/ClickHouse/libstemmer_c.git
 [submodule "contrib/wordnet-blast"]
 	path = contrib/wordnet-blast
-    url = https://github.com/ClickHouse/wordnet-blast
+    url = https://github.com/ClickHouse/wordnet-blast.git
 [submodule "contrib/lemmagen-c"]
 	path = contrib/lemmagen-c
-    url = https://github.com/ClickHouse/lemmagen-c
+    url = https://github.com/ClickHouse/lemmagen-c.git
 [submodule "contrib/cld2"]
 	path = contrib/cld2
-    url = https://github.com/ClickHouse/cld2
+    url = https://github.com/ClickHouse/cld2.git
 [submodule "contrib/nlp-data"]
 	path = contrib/nlp-data
-    url = https://github.com/ClickHouse/nlp-data
+    url = https://github.com/ClickHouse/nlp-data.git
 [submodule "contrib/libdeflate"]
 	path = contrib/libdeflate
 	url = https://github.com/ByConity/libdeflate.git

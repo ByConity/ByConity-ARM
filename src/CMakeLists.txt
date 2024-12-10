@@ -1,3 +1,18 @@
+set (ENABLE_EMBEDDED_COMPILER 0)
+set (USE_EMBEDDED_COMPILER 0)
+#add_compile_definitions(USE_EMBEDDED_COMPILER=0)
+#add_compile_definitions(LLVM_DISABLE_ABI_BREAKING_CHECKS_ENFORCING)
+#add_compile_definitions(LLVM_ENABLE_ABI_BREAKING_CHECKS)
+
+add_compile_definitions(LLVM_DISABLE_ABI_BREAKING_CHECKS_ENFORCING=1)
+
+execute_process(COMMAND llvm-config --cxxflags --libs
+                OUTPUT_VARIABLE LLVM_FLAGS
+                OUTPUT_STRIP_TRAILING_WHITESPACE)
+add_compile_options(${LLVM_FLAGS})
+add_link_options(${LLVM_FLAGS})
+
+
 if (USE_INCLUDE_WHAT_YOU_USE)
     set (CMAKE_CXX_INCLUDE_WHAT_YOU_USE ${IWYU_PATH})
 endif ()

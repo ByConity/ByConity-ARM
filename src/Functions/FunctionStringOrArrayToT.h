@@ -11,6 +11,8 @@
 #include <Columns/ColumnsNumber.h>
 #include <Interpreters/Context_fwd.h>
 
+#undef USE_EMBEDDED_COMPILER
+
 
 namespace DB
 {

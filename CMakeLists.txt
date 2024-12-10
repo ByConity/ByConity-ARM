@@ -28,6 +28,15 @@ endforeach()
 
 project(ClickHouse)
 
+
+execute_process(COMMAND llvm-config --cxxflags --libs
+                OUTPUT_VARIABLE LLVM_FLAGS
+                OUTPUT_STRIP_TRAILING_WHITESPACE)
+add_compile_options(${LLVM_FLAGS})
+add_link_options(${LLVM_FLAGS})
+add_compile_definitions(LLVM_DISABLE_ABI_BREAKING_CHECKS_ENFORCING=1)
+
+
 # If turned off: e.g. when ENABLE_FOO is ON, but FOO tool was not found, the CMake will continue.
 option(FAIL_ON_UNSUPPORTED_OPTIONS_COMBINATION
    "Stop/Fail CMake configuration if some ENABLE_XXX option is defined (either ON or OFF)

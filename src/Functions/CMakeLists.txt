@@ -1,3 +1,8 @@
+set (ENABLE_EMBEDDED_COMPILER 0)
+set (USE_EMBEDDED_COMPILER 0)
+add_compile_definitions(USE_EMBEDDED_COMPILER=0)
+add_compile_definitions(ENABLE_EMBEDDED_COMPILER=0)
+
 configure_file(config_functions.h.in ${ConfigIncludePath}/config_functions.h)
 
 add_subdirectory(divide)
